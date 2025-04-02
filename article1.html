@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Yoga - articles</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="./output.css" rel="stylesheet">
+</head>
+<body class="text-black bg-neutral-100 dark:text-white dark:bg-neutral-800">
+	<header class="bg-purple-600 dark:bg-purple-800">
+		<h1>Articles</h1>
+	</header>
+
+	<div class="articles">
+		<article>
+			<header>
+				<h2>Yoga Teacher Alliance Courses</h2>
+			</header>
+
+			<p>
+				If you want to become yoga teacher, you have to first decide where to do your yoga teacher training. There are 3 most common locations:
+			</p>
+
+			<ol type="I">
+				<li>India</li>
+				<li>Bali</li>
+				<li>Greece</li>
+			</ol>
+
+			<map name="world-map">
+			  <area
+			    shape="circle"
+			    coords="827,488,35"
+			    href="https://en.wikipedia.org/wiki/Bali"
+			    alt="Bali" >
+			  <area
+			    shape="circle"
+			    coords="714,380,35"
+			    href="https://en.wikipedia.org/wiki/India"
+			    alt="India" >
+			  <area
+			    shape="circle"
+			    coords="559,304,35"
+			    href="https://en.wikipedia.org/wiki/Greece"
+			    alt="Greece" >
+			</map>
+			<img
+			  usemap="#world-map"
+			  src="./map.jpg"
+			  alt="World map" >
+
+
+			<p>
+				Another important thing is to make sure that your school is <strong>certified by <a class="text-purple-800 underline hover:text-purple-600 dark:text-purple-600 dark:hover:text-purple-400 " href="https://en.m.wikipedia.org/wiki/Yoga_Alliance">Yoga Alliance</a></strong>. If you want to do your course in <em>Bali</em>, here is a comparision of some of the most popular places.
+			</p>
+
+			<table>
+				<caption>
+					200h Yoga Teacher Alliance Courses in Bali - comparison
+				</caption>
+				<thead>
+					<tr>
+						<th scope="col">School</th>
+						<th scope="col">Location</th>
+						<th scope="col">Duration [days]</th>
+						<th scope="col">Cost [EUR]</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">Yoga Union</th>
+						<td>Ubud</td>
+						<td>23</td>
+						<td>1900</td>
+					</tr>
+					<tr>
+						<th scope="row">Loka Yoga</th>
+						<td>Canggu</td>
+						<td>27</td>
+						<td>1900</td>
+					</tr>
+					<tr>
+						<th scope="row">All Yoga Training</th>
+						<td>Nusa Lembongan</td>
+						<td>23</td>
+						<td>2900</td>
+					</tr>
+					<tr>
+						<th scope="row">Yoga New Vision</th>
+						<td>Ubud</td>
+						<td>22</td>
+						<td>2800</td>
+					</tr>
+					<tr>
+						<th scope="row">Sacred Paths</th>
+						<td>Bumi Cinta Bali</td>
+						<td>21</td>
+						<td>2100</td>
+					</tr>
+					<tr>
+						<th scope="row">Yogamantra</th>
+						<td>Ubud</td>
+						<td>25</td>
+						<td>1400</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<th scope="row" colspan="3">Avarage cost</th>
+						<td>2160</td>
+					</tr>
+				</tfoot>
+			</table>
+
+			<p>
+				And that would be <em>almost</em> all for today... At the end, as always, I have a yoga pose for you!
+			</p>
+
+			<div class="pose-of-the-day">
+				<h3>Pose of the day</h3>
+				<img 
+					class="picture" 
+					src="./yoga_pose_drawing.png" 
+					alt="Yoga pose drawing" >
+				<details>
+					<summary>Pincha Mayurasana Hollow Back</summary>
+					It is a variation of the Pincha Mayurasana (Feathered Peacock Pose). This forearm balancing pose majorly focuses on strengthening the arms and shoulders, biceps and triceps, core, back, chest, thighs, and hip, hence strengthening the whole body.
+				</details>
+			</div>
+
+		</article>
+	</div>
+
+	<footer>
+		<div class="form">
+			<span class="relative flex size-3">
+				<span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-purple-950 opacity-75"></span>
+				<span class="relative inline-flex size-3 rounded-full bg-purple-700"></span>
+			</span>
+			<h3>Join our newsletter!</h3>
+			<form>
+				<div>
+					<label for="name">Name</label>
+					<input type="text" id="name" name="name" require>
+				</div>
+				<div>
+					<label for="email">Email</label>
+					<input type="text" id="email" name="email" required>
+				</div>
+				<div>
+					<label for="add_info">What are your main interests?</label>
+					<select id="add_info-select" name="add_info">
+						<option value="">--Please choose an option--</option>
+						<option value="courses">Yoga Teacher Courses</option>
+						<option value="yoga_positions">Yoga positions explanation</option>
+						<option value="fun_facts">Fun facts</option>
+					</select>
+				</div>
+				<div>
+					<button class="button" type="submit">Send</butto>
+				</div>
+			</form>
+		</div>
+		<div class="all-rights-reserved">
+			All rights reserved.
+		</div>
+	</footer>
+</body>
+</html>

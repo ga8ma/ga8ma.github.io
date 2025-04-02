@@ -1,0 +1,136 @@
+@import "tailwindcss";
+/* Base styles */
+body {
+  @apply font-sans leading-normal mx-auto max-w-6xl px-4;
+}
+/* Header styles */
+header.bg-purple-600 {
+  @apply py-4 px-4 text-center text-white mb-8 rounded-b-lg shadow-md;
+}
+header h1 {
+  @apply text-4xl font-bold;
+}
+/* Articles container styles - flex-row by default, flex-col on small screens */
+.articles {
+  @apply flex flex-row flex-wrap gap-6 mb-8;
+}
+/* Article styles */
+article {
+  @apply mb-6 bg-white dark:bg-neutral-700 rounded-lg shadow-md p-6 flex-1 min-w-0;
+}
+article header {
+  @apply mb-6 border-b border-purple-200 dark:border-purple-700 pb-4;
+}
+article header h2.article-link {
+	@apply hover:text-purple-700 dark:hover:text-purple-300;
+}
+article h2 {
+  @apply text-3xl font-semibold text-purple-800 dark:text-purple-400;
+}
+article p {
+  @apply my-4 text-lg leading-relaxed;
+}
+/* List styles */
+ol {
+  @apply list-decimal pl-10 my-6 text-lg;
+}
+ol li {
+  @apply mb-2;
+}
+/* Map and image styles */
+img {
+  @apply max-w-full h-auto rounded-lg mx-auto my-6 shadow-md;
+}
+/* Table styles */
+table {
+  @apply table-auto border-2 border-black w-full my-8 bg-white dark:bg-neutral-500 overflow-hidden;
+}
+caption {
+  @apply p-3 bg-purple-200 dark:bg-purple-900 text-lg font-semibold text-black dark:text-white;
+}
+th {
+  @apply border-2 border-black text-left p-3 font-bold text-purple-600 dark:text-purple-600 bg-neutral-200 dark:bg-neutral-600;
+}
+td {
+  @apply p-3 border-2 border-black;
+}
+tbody tr:hover {
+  @apply bg-purple-50 dark:bg-purple-600;
+}
+tfoot {
+  @apply bg-purple-100 dark:bg-purple-600 font-bold text-purple-900 dark:text-white;
+}
+/* Pose of the day section */
+div.pose-of-the-day {
+  @apply shadow-lg bg-neutral-200 dark:bg-neutral-600 p-6 rounded-lg my-8;
+}
+div.pose-of-the-day h3 {
+  @apply text-3xl font-semibold mb-4 text-center text-black dark:text-white;
+}
+details {
+  @apply my-4;
+}
+summary {
+  @apply text-purple-800 hover:text-purple-600 dark:text-purple-600 dark:hover:text-purple-400 cursor-pointer font-medium py-2;
+}
+details p {
+  @apply pl-4 pt-2 text-base italic;
+}
+/* Footer styles */
+footer {
+  @apply pt-8 px-6 bg-purple-300 dark:bg-purple-950 text-white text-center rounded-t-lg shadow-inner;
+}
+footer div.form {
+  @apply bg-purple-100 dark:bg-purple-600 p-6 rounded-lg mb-6;
+}
+footer div.form h3 {
+  @apply text-2xl font-semibold mb-4 text-center text-black dark:text-white;
+}
+footer div.all-rights-reserved {
+  @apply py-2 px-0 m-0 rounded-t-lg bg-black text-white w-full;
+}
+/* Form styles */
+form {
+  @apply max-w-md mx-auto;
+}
+form div {
+  @apply mb-4;
+}
+label {
+  @apply block mb-2 font-medium text-black dark:text-white;
+}
+input, select {
+  @apply w-full p-3 rounded-lg border border-purple-300 dark:border-purple-500 bg-white dark:bg-neutral-600 text-black dark:text-white;
+}
+input:focus, select:focus {
+  @apply outline-none ring-2 ring-purple-400 dark:ring-purple-900;
+}
+.button {
+  @apply bg-purple-300 hover:bg-purple-200 dark:bg-purple-900 dark:hover:bg-purple-800 text-black dark:text-white font-bold py-3 px-6 rounded-lg transition duration-200 w-full;
+}
+/* Picture class */
+.picture {
+  @apply border-2 border-purple-100 dark:border-purple-900;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .articles {
+    @apply flex-col;
+  }
+  
+  article {
+    @apply flex-auto w-full;
+  }
+  
+  table {
+    @apply text-sm;
+  }
+  
+  article h2 {
+    @apply text-2xl;
+  }
+  
+  div.shadow-lg h3 {
+    @apply text-xl;
+  }
+}
